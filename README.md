@@ -1,41 +1,20 @@
-# Hello World with React boilerplate
-<p>
-  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
-  </a>
-</p>
+# To-Do List with REST API
 
-This template is similar to create-react-app but it's meant for 4Geeks Academy students.
+A **React** to-do list that loads and saves tasks to a remote REST API, so the list persists between visits.
 
-##### Download the boilerplate using git
+**Tech:** React (hooks) · Fetch API · Bootstrap · Webpack
 
+## How it works
+
+- `useEffect` loads the list with a `GET` request when the page opens
+- Adding or deleting a task updates React state with `useState` and syncs the full list back with a `PUT` request
+- Components: `Input` (add a task), `List` (show and delete tasks), `Counter` (tasks left) — see [`src/js/component`](src/js/component)
+
+## Run it
+
+```bash
+npm install
+npm run start     # http://localhost:3000
 ```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
 
-##### and install the npm package:
-```
-$ npm install
-```
-
-## Start coding!
-
-For Windows, Mac, Linux or Gitpod, start the webpack server with live reload:
-- `$ npm run start`
-
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
-
-## Publish your website!
-
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
-
-It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
-
-## Other features
-
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-command publish of the code to github pages with `npm run deploy:github`.
-- Babel 7 (really fast).
+Built as part of the 4Geeks Academy Full Stack Software Development program (2023), starting from the academy's React boilerplate (original notes in [`docs/BOILERPLATE_README.md`](docs/BOILERPLATE_README.md)).
